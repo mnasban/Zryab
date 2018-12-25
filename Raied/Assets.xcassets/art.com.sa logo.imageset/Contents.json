@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "zryab.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ZIRYAB.png",
       "scale" : "2x"
     },
     {
