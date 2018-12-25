@@ -11,7 +11,7 @@ import WebKit
 
 class ViewController: UIViewController {
     
-    let url1 = "http://www.art.com.sa"
+    let url1 = "http://www.zryab.sa/"
     
 
     @IBOutlet weak var homeMenuButton: UIButton!
@@ -39,17 +39,22 @@ class ViewController: UIViewController {
         heightConstraint.isActive = true
         widthConstraint.isActive = true
         
-        let logo = UIImage(named: "naviImage.png")
-        let imageView = UIImageView(image: logo)
-        imageView.contentMode = .scaleAspectFit // set imageview's content mode
-        self.navigationItem.titleView = imageView
+        //let logo = UIImage(named: "naviImage.png")
+       // let imageView = UIImageView(image: logo)
+       // imageView.contentMode = .scaleAspectFit // set imageview's content mode
+       // self.navigationItem.titleView = imageView
         //
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        
+        let mycolor = UIColor.init(red: 0.15, green: 0.15, blue: 0.15, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor  = mycolor;
         
         self.webView.isHidden=false
    
         progressBar=UIProgressView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50))
         progressBar.progress=0
-        progressBar.tintColor=UIColor.cyan
+        progressBar.tintColor=UIColor.black
+        
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: NSKeyValueObservingOptions.new, context: nil)
         webView.addSubview(progressBar)
         

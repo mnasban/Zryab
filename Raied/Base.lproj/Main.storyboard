@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--لوحات-->
+        <!--View Controller-->
         <scene sceneID="qjX-gV-vaj">
             <objects>
                 <viewController id="uow-j1-53s" customClass="ViewController" customModule="Raied" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,26 +21,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0h-4V-tzY">
-                                <rect key="frame" x="0.0" y="107" width="91" height="30"/>
+                                <rect key="frame" x="0.0" y="125" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="الرئيسيه"/>
+                                <state key="normal" title="الرئيسيه">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="homePagebuttonPressed:" destination="uow-j1-53s" eventType="touchUpInside" id="JsO-B2-cVv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H34-ZO-jQQ">
-                                <rect key="frame" x="0.0" y="219" width="91" height="30"/>
+                                <rect key="frame" x="0.0" y="237" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="عن لوحات"/>
+                                <state key="normal" title="عن زرياب">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="ItP-d2-WXn" kind="show" id="vaY-iS-WZH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0F-q5-JHU">
-                                <rect key="frame" x="0.0" y="163" width="91" height="30"/>
+                                <rect key="frame" x="0.0" y="181" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="اتصل بنا"/>
+                                <state key="normal" title="اتصل بنا">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="LDR-ub-faK" kind="show" id="34M-fX-VL7"/>
                                 </connections>
@@ -83,6 +89,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="0te-dl-xvA" firstAttribute="top" secondItem="9Ja-Ka-1El" secondAttribute="top" constant="6" id="1lQ-Im-itU"/>
                                             <constraint firstItem="qgH-7O-I4Y" firstAttribute="firstBaseline" secondItem="0te-dl-xvA" secondAttribute="firstBaseline" id="4w1-DE-Q51"/>
@@ -120,7 +127,7 @@
                                 <viewLayoutGuide key="safeArea" id="hBb-F7-eqr"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1843152642250061" green="0.18431103229522705" blue="0.18431386351585388" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2YM-Lh-BFO" firstAttribute="bottom" secondItem="nAk-Y2-Bk8" secondAttribute="bottom" id="BIf-xN-ewy"/>
                             <constraint firstItem="2YM-Lh-BFO" firstAttribute="leading" secondItem="r96-zx-AeJ" secondAttribute="leading" id="TDq-a7-8Ck"/>
@@ -129,18 +136,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nAk-Y2-Bk8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="لوحات" id="cJ2-tr-Llt">
-                        <barButtonItem key="backBarButtonItem" title="الخلف" id="iVb-8v-sYG"/>
-                        <barButtonItem key="leftBarButtonItem" id="1Wd-Q5-nWD">
+                    <navigationItem key="navigationItem" id="cJ2-tr-Llt">
+                        <barButtonItem key="backBarButtonItem" title="الخلف" id="iVb-8v-sYG">
+                            <color key="tintColor" red="0.1843152642" green="0.18431103230000001" blue="0.18431386350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="1Wd-Q5-nWD">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OwO-bz-y60">
-                                <rect key="frame" x="16" y="0.0" width="345" height="44"/>
+                                <rect key="frame" x="16" y="0.0" width="351" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="menu"/>
+                                <state key="normal" title="Button" image="menu">
+                                    <color key="titleColor" red="0.1843152642" green="0.18431103230000001" blue="0.18431386350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.1843152642" green="0.18431103230000001" blue="0.18431386350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="showMainMenuButtonPressed:" destination="uow-j1-53s" eventType="touchUpInside" id="lkp-NQ-YN8"/>
                                 </connections>
                             </button>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -174,16 +185,15 @@
                                                     <constraint firstAttribute="height" constant="127" id="5Ob-ly-Ibh"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdA-53-LRU">
-                                                <rect key="frame" x="8" y="215" width="359" height="172"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="8" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdA-53-LRU">
+                                                <rect key="frame" x="8" y="200" width="359" height="172"/>
                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">أعد الحياة إلى جدران منزلك ، وأختر لوحتك من ضمن تشكيلة واسعه تشمل كل فنون الرسم والتشكيل أو الصور الفوتوغرافيه لأجمل مناطق المملكة أو حمل صورك الخاصة وبالأختيار مابين طباعتها أو رسمها كاركيتورياً أو بالرصاص لنحولها لك إلى لوحة جميلة بواسطة رسامينا المحترفين .</string>
+                                                        <mutableString key="content">زرياب هو مشروع ربحي ثقافي سعودي بدأ نشاطة في مطلع العام 2018 م ويهدف إلى التوعية ونشر الثقافة الفنية الموسيقية في المجتمع السعودي عبر توفير مرجعية ثقافية وأكاديمية موسيقية متخصصة موثوقة للفنان المحترف والهاوى على حد سواء كما توفر تشكيلة متنوعة من المنتجات والألآت الموسيقية المضمونه حيث لايقتصر دور زرياب في توفيرها فقط وأنما مساعدة المبتدئ على أختيار الأله التي تناسبه ومن ثم تعليمه تدريجياً عليها ومساعده أيضاً في تطوير أداءه وتنمية مواهبه عبر معهد زرياب الفني للتدريب الأليكتروني عبر شروحات معده مسبقاً لنخبة من الأستاذه الموسيقيين في العزف والصولفيج والتلحين وكل فروع علم الموسيقى.</mutableString>
                                                         <attributes>
-                                                            <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" size="22" name="AlNile-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <font key="NSFont" size="13" name="TraditionalArabic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="rightToLeft" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
@@ -332,7 +342,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="art.com.sa logo" width="924" height="748"/>
+        <image name="art.com.sa logo" width="129" height="168"/>
         <image name="home" width="512" height="512"/>
         <image name="left" width="512" height="512"/>
         <image name="menu" width="533" height="533"/>
